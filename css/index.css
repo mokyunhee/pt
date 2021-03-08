@@ -123,17 +123,6 @@ img {width: 100%;}
     overflow-y: scroll;
 }
 
-/*
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    height: 87vh;
-    overflow-y: scroll;
-}
-*/
-
-
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
@@ -152,39 +141,7 @@ img {width: 100%;}
   .column {
     flex: 50%;
     max-width: 50%;
-      
-    ::-webkit-scrollbar {
-        -webkit-appearance: none;
-    }
-
-    ::-webkit-scrollbar:vertical {
-        width: 15px;
-    }
-
-    ::-webkit-scrollbar:horizontal {
-        height: 12px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, .5);
-        border-radius: 10px;
-        border: 2px solid #ffffff;
-    }
-
-    ::-webkit-scrollbar-track {
-        border-radius: 10px;  
-        background-color: #ffffff; 
-    }
   }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-    
     ::-webkit-scrollbar {
         -webkit-appearance: none;
     }
@@ -209,30 +166,12 @@ img {width: 100%;}
     }
 }
 
-@media all and (max-width:767px) {
-    /* 브라우저의 가로폭이 767px 이하일 때, 스마트폰(가로, 세로) */
-    ::-webkit-scrollbar {
-        -webkit-appearance: none;
-    }
-
-    ::-webkit-scrollbar:vertical {
-        width: 15px;
-    }
-
-    ::-webkit-scrollbar:horizontal {
-        height: 12px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, .5);
-        border-radius: 10px;
-        border: 2px solid #ffffff;
-    }
-
-    ::-webkit-scrollbar-track {
-        border-radius: 10px;  
-        background-color: #ffffff; 
-    }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
