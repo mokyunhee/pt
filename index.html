@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LEE HYEON-JU</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fullpage.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="shortcut icon" href="img/logo_bluemoon_thumb.png">
+    
+    <script>
+		$(function(){
+            var size = $('body').width();
+
+            if (size > 1390) {
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:760});
+            } else if (850 < size && size <= 1389){
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:560});
+            } else if (500 < size && size <= 849){                               
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:456});
+            } else if (size <= 500){                               
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:300});
+            };
+
+            $(window).resize(function(){
+                var size = $('body').width();
+                
+                if (size > 1390) {
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:760});
+                } else if (850 < size && size <= 1389){
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:560});
+                } else if (500 < size && size <= 849){                               
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:456});
+                } else if (size <= 500){                               
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:300});
+                };
+            });
+            
+            $(".slide_1 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_1 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_1 .pf_img_container .pf_img_1").eq(i).css('display','block');
+                
+                $(".slide_1 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_1 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_2 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_2 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_2 .pf_img_container .pf_img_1").eq(i).css('display','block');
+                
+                $(".slide_2 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_2 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_3 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_3 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_3 .pf_img_container .pf_img_1").eq(i).css('display','block');
+            
+                $(".slide_3 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_3 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+        });
+	</script>
+	<style>
+        video {
+            display: block; width: 100%; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); 
+        }
+/*        .section_home h1 {color: aliceblue; opacity: 0.8; letter-spacing: 5px; font-size:110px;}*/
+    </style>
+</head>
+
+
+<body>
+    <nav id="navTop">
+        <div id="navTop_box">
+            <div id="logo">
+                <div><img src="img/logo_moon.png" alt=""></div>
+                <span>            </span>
+            </div>
+            <ul id="topMenu">
+                <li data-menuanchor="0st"><a href="#0st">Main</a></li>
+                <li data-menuanchor="1st"><a href="#1st">CV</a></li>
+                <li data-menuanchor="2st"><a href="#2st">Video</a></li>
+                <li data-menuanchor="3st"><a href="#3st">Photo</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="full-page">
+        <div class="section s0">
+            <div class="section_home">
+                <video src="img/river.mp4" data-autoplay muted loop playsinline></video>
+                <h1>LEE HYEON-JU</h1>
+            </div>
+        </div>
+        <div class="section s1">
+            <div class="section_content section_content1">
+            <h2>CV</h2>
+                <div class="pr_container">
+                    <div class="pr_profile">
+                        <div><img src="img/hyeonju_2.JPG" /></div>
+                        <ul>
+                            <li>이현주 / Lee Hyeon-Ju</li>
+                            <li><i class="fas fa-user"></i>영상관련 직종</li>
+                            <li><i class="fas fa-calendar"></i>1991.05.12 (만 29세)</li>
+                            <li><i class="fas fa-map-marker-alt"></i>인천광역시 계양구 거주</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <div class="pr_box edu_box">
+                            <h3 class="pr_title edu_title">EDUCATION</h3>
+                            <div class="pr_date edu_date">
+                                <div>2018.06</div>
+                            </div>
+                            <div class="pr_txt edu_txt">
+                                <div>Diplôme national d'art (DNA)</div>
+                                <ul>
+                                    <li>- 교육기관: L'École Supérieure d'Art de Lorraine</li>
+                                    <li>- 교육내용: Art – mention Dispositifs multiples </li>
+                                </ul>                   
+                            </div>
+                            <h3 class="pr_title edu_title empt" style= 'opacity: 0'>EDUCATION</h3>
+                            <div class="pr_date edu_date">
+                                <div>2020.09.21 ~ 2021.03.17</div>
+                            </div>
+                            <div class="pr_txt edu_txt">
+                                <div>광고콘텐츠 제작</div>
+                                <ul>
+                                    <li>- 교육기관: 방송정보국제교육원 (서울 영등포구)</li>
+                                    <li>- 교육내용: 카메라 촬영, 영상 종합편집, 
+                                                   자막디자인, 색보정, 모션그래픽, 방송CG</li>
+                                </ul>                   
+                            </div>
+                        </div>
+                        <div class="pr_box cer_box">
+                            <h3 class="pr_title cer_title">LICENSE</h3>
+                            <div class="pr_date cer_date">
+                                <div>2016.02</div>
+                                <div>2018.12</div>
+                            </div>
+                            <div class="pr_txt cer_txt">
+                                <div>프랑스어 TCF B2</div>
+                                <div>운전면허 1종 보통</div>
+                            </div>
+                        </div>
+                        <div class="ct_box">
+                           <div class="ct_inbox">
+                               <div class="ct_title"><h3>CONTACT</h3></div>
+                               <div class="ct_txt">
+                                   <ul>
+                                       <li><img src="img/con_phone.png" alt=""></li>
+                                       <li>010-6734-2242</li>
+                                   </ul>
+                                    <ul>
+                                       <li><img src="img/con_email.png" alt=""></li>
+                                       <li>galbiwang@gmail.com</li>
+                                   </ul>
+                                   <ul>
+                                       <li><img src="img/con_kakao.png" alt=""></li>
+                                       <li>ID: endymion512</li>
+                                   </ul>
+                               </div>
+                           </div>
+                            
+                        </div>
+                    </div>
+                </div><!--pr_container-->
+            </div><!--section_box section_box_content-->
+        </div><!--section s1-->
+        <div class="section s2">
+            <div class="section_content section_content3">
+<!--               포트폴리오 1-->
+                <div class="slide slide_1">
+                    <h2>광고제작</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="img/gga1.png" /></div>
+                            <div class="pf_img_1"><img src="img/gga2.png" /></div>
+                            <div class="pf_img_1"><img src="img/gga3.png" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="img/gga1_thumb.jpg"></li>
+                                <li><img src="img/gga2_thumb.jpg"></li>
+                                <li><img src="img/gga3_thumb.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">깨수깡</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="img/gga1.png" /></div>
+                                    <div class="pf_img_1"><img src="img/gga2.png" /></div>
+                                    <div class="pf_img_1"><img src="img/gga3.png" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="img/gga1_thumb.jpg"></li>
+                                        <li><img src="img/gga2_thumb.jpg"></li>
+                                        <li><img src="img/gga3_thumb.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt">깨수깡</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">제작 소요기간: </span>
+                            <span class="pf_txt">2020.11.16. ~ 2020.12.17</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기획의도:</span>
+                            <span class="pf_txt">‘깨수깡이 술을 깨는 데에 효과가 큰 제품’임을 소비자들에게 인식시키자</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴:</span>
+                            <span class="pf_txt">SONY a7 M3, 포토샵, 프리미어</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/LQ0hJ4qKmzM" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--                포트폴리오 2-->
+                <div class="slide slide_2">
+                    <h2>공모전 / 스타트 기업 홍보영상</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="img/mima1.png" /></div>
+                            <div class="pf_img_1"><img src="img/mima2.png" /></div>
+                            <div class="pf_img_1"><img src="img/mima3.png" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="img/mima1_thumb.jpg"></li>
+                                <li><img src="img/mima2_thumb.jpg"></li>
+                                <li><img src="img/mima3_thumb.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">미마마스크</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="img/mima1.png" /></div>
+                                    <div class="pf_img_1"><img src="img/mima2.png" /></div>
+                                    <div class="pf_img_1"><img src="img/mima3.png" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="img/mima1_thumb.jpg"></li>
+                                        <li><img src="img/mima2_thumb.jpg"></li>
+                                        <li><img src="img/mima1_thumb.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt">미마마스크 “기적을 만드는 사람들”</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">제작 소요기간: </span>
+                            <span class="pf_txt">2020.12.28. ~ 2021.01.10</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기획의도:</span>
+                            <span class="pf_txt">일상이 되어 버린 코로나 우울증 시대에 아세이도를 사회적 기업으로 미마마스크 이미지를 감성적으로 확립시켜 타 마스크와 차별화 전략. </span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴:</span>
+                            <span class="pf_txt">SONY a7 M3, 프리미어, 애프터 이펙트</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/nE4XLfUx5XI" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--                포트폴리오 3-->
+                <div class="slide slide_3">
+                    <h2>오프닝 시퀀스</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="img/lala1(edit).jpg" /></div>
+                            <div class="pf_img_1"><img src="img/lala2.png" /></div>
+                            <div class="pf_img_1"><img src="img/lala1(edit).jpg" /></div>
+                            <div class="pf_img_1"><img src="img/lala1(edit).jpg" /></div>
+
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="img/lala1_thumb.jpg"></li>
+                                <li><img src="img/lala2_thumb.jpg"></li>
+                                <li><img src="img/lala1_thumb.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">"라라랜드"-첫번째 데이트</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="img/lala1(edit).jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/lala2.png" /></div>
+                                    <div class="pf_img_1"><img src="img/lala1(edit).jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/lala1(edit).jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="img/lala1_thumb.jpg"></li>
+                                        <li><img src="img/lala2_thumb.jpg"></li>
+                                        <li><img src="img/lala1_thumb.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt">라라랜드 "꿈을 꾸는 사람들"</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">제작 소요기간: </span>
+                            <span class="pf_txt">2021.01.13. ~ 2021.01.15</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명:</span>
+                            <span class="pf_txt">‘꿈을 꾸는 사람들’이라는 주제를 오프닝 타이틀에서 표현한다. </span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴:</span>
+                            <span class="pf_txt">일러스트, 포토샵, 프리미어, 애프터 이펙트</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/9bWxPR3K45I" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+            </div> 
+        </div>   
+<!--                 포트폴리오 4-->
+        <!--사진이 들어갈 공간입니다.-->
+        <div class="section s3">
+             <div class="slide slide_1">
+               <div class="row"> 
+                  <div class="column">
+                    <img src="img/30%EB%B6%84%EC%97%90%201%EC%B4%88~1%EC%B4%88%20%EB%96%A8%EB%A6%BC%EA%B3%BC%20%ED%9D%94%EB%93%A4%EB%A6%BC1.jpg" style="width:100%">
+                    <img src="img/30%EB%B6%84%EC%97%90%201%EC%B4%88~1%EC%B4%88%20%EB%96%A8%EB%A6%BC%EA%B3%BC%20%ED%9D%94%EB%93%A4%EB%A6%BC2.jpg" style="width:100%">
+                    <img src="img/sf1.jpg" style="width:100%">
+                    <img src="img/sf2.jpg" style="width:100%">
+                    <img src="img/sf3.jpg" style="width:100%">
+                    <img src="img/sf4.jpg" style="width:100%">
+                    <img src="img/vi2.jpg" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="img/%EB%B6%88%EC%95%881-1.jpg" style="width:100%">
+                    <img src="img/%EB%B6%88%EC%95%881-2.jpg" style="width:100%">
+                    <img src="img/%EB%B6%88%EC%95%882-1.jpg" style="width:100%">
+                    <img src="img/%EB%B6%88%EC%95%882-2.jpg" style="width:100%">
+                    <img src="img/%EC%82%AC%EC%A7%84%EC%A0%81%ED%8F%AD%EB%A0%A51.jpg" style="width:100%">
+                    <img src="img/%EC%82%AC%EC%A7%84%EC%A0%81%20%ED%8F%AD%EB%A0%A52.jpg" style="width:100%">
+                  </div>  
+                  <div class="column">
+                    <img src="img/slc1.jpg" style="width:100%">
+                    <img src="img/slc2.jpg" style="width:100%">
+                    <img src="img/%EC%83%89%EB%B0%98%EC%A0%841.jpg" style="width:100%">
+                    <img src="img/%EC%83%89%EB%B0%98%EC%A0%842.jpg" style="width:100%">
+                    <img src="img/%EC%83%89%EB%B0%98%EC%A0%843.jpg" style="width:100%">
+                    <img src="img/%EC%83%89%EB%B0%98%EC%A0%844.jpg" style="width:100%">
+                    <img src="img/%EC%83%89%EC%98%A8%EB%8F%841.jpg" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="img/%EC%83%89%EC%98%A8%EB%8F%843.jpg" style="width:100%">
+                    <img src="img/%EC%83%89%EC%98%A8%EB%8F%844.jpg" style="width:100%">
+                    <img src="img/%EC%9E%A5%EB%85%B8%EC%B6%9C1.jpg" style="width:100%">
+                    <img src="img/%EC%9E%A5%EB%85%B8%EC%B6%9C2.jpg" style="width:100%">
+                    <img src="img/%EC%9E%A5%EB%85%B8%EC%B6%9C3.jpg" style="width:100%">
+                    <img src="img/%EC%9E%A5%EB%85%B8%EC%B6%9C4.jpg" style="width:100%">
+                  </div>
+                </div>
+            </div>
+<!--
+             <div class="slide slide_2">     
+                  <div class="row"> 
+                  <div class="column">
+                    <img src="img/wedding.jpg" style="width:100%">
+                    <img src="img/rocks.jpg" style="width:100%">
+                    <img src="img/falls2.jpg" style="width:100%">
+                    <img src="img/paris.jpg" style="width:100%">
+                    <img src="img/nature.jpg" style="width:100%">
+                    <img src="img/mist.jpg" style="width:100%">
+                    <img src="img/paris.jpg" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="img/underwater.jpg" style="width:100%">
+                    <img src="img/ocean.jpg" style="width:100%">
+                    <img src="img/wedding.jpg" style="width:100%">
+                    <img src="img/mountainskies.jpg" style="width:100%">
+                    <img src="img/rocks.jpg" style="width:100%">
+                    <img src="img/underwater.jpg" style="width:100%">
+                  </div>  
+                  <div class="column">
+                    <img src="img/wedding.jpg" style="width:100%">
+                    <img src="img/rocks.jpg" style="width:100%">
+                    <img src="img/falls2.jpg" style="width:100%">
+                    <img src="img/paris.jpg" style="width:100%">
+                    <img src="img/nature.jpg" style="width:100%">
+                    <img src="img/mist.jpg" style="width:100%">
+                    <img src="img/paris.jpg" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="img/underwater.jpg" style="width:100%">
+                    <img src="img/ocean.jpg" style="width:100%">
+                    <img src="img/wedding.jpg" style="width:100%">
+                    <img src="img/mountainskies.jpg" style="width:100%">
+                    <img src="img/rocks.jpg" style="width:100%">
+                    <img src="img/underwater.jpg" style="width:100%">
+                  </div>
+                </div>
+            </div>
+-->
+            <div id="footer">
+                <div id="footer_txt">Copyright 2021.Lee Hyeon-Ju All rights reserved</div>
+            </div>
+        </div>
+    </div>
+<script>
+    new fullpage('#full-page', {
+        licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+        anchors:["0st","1st","2st","3st"],
+        menu:"#topMenu",
+        sectionsColor:['#fff', '#eee', '#fff', '#eee'],
+        scrollingSpeed: 1000,
+        slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+        onLeave: function(origin, destination, direction) {
+            var leavingSection = this;
+            
+            if(origin.index == 0) {
+                $('.right_box .ct_inbox .ct_txt ul li').delay(600).fadeIn();
+            }
+            if(origin.index == 2) {
+                $('.right_box .ct_inbox .ct_txt ul li').delay(600).fadeIn();
+            }
+            if(origin.index == 1) {
+                $('.right_box .ct_inbox .ct_txt ul li').fadeOut();
+            }
+        },
+        scrollOverflow: true,
+    });
+</script>
+</body>
+</html>
